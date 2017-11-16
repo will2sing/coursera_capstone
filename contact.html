@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mandarin Palace</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Mandarin Palace</h1></a>
+            <p>
+              <a href="tel:503-555-5555" class="visible-sm visible-md visible-lg">
+                <span>503-555-5555</span></a>
+            </p>
+          </div>
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+            </li>
+            <li id="navMenuButton">
+              <a href="index.html" onclick="_blank">
+                <span class="glyphicon glyphicon-home"></span><br class="hidden-xs"> Home</a>
+            </li>
+            <li>
+              <a href="menu.html">
+                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+            </li>
+            <li class="active">
+              <a href="contact.html">
+                <span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs"> Contact</a>
+            </li>
+
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+
+  <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:503-555-5555">
+    <span class="glyphicon glyphicon-earphone"></span>
+    503-555-5555
+    </a>
+  </div>
+
+  <div id="main-content" class="container">
+    <form id="contact-form" role="form">
+      <div class="messages"></div>
+      <div class="controls col-md-6 col-sm-12">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="form_name">Name *</label>
+              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Name is required.">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="form-group">
+              <label for="form_email">Email *</label>
+              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="form-group">
+              <label for="form_phone">Phone</label>
+              <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="form_message">Message *</label>
+              <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12">
+            <input type="submit" class="btn btn-success btn-send" value="Send message">
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
+          </div>
+        </div>
+      </div><!-- End of Controls-->
+    </form><!-- End of Form-->
+    <div class="col-md-6 col-sm-6 col-xs-12">
+      <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3635874,-76.7138622,17z/data=!4m6!1m3!3m2!1s0x89c81a14e7817803:0xab20a0e99daa17ea!2sDavid+Chu's+China+Bistro!3m1!1s0x89c81a14e7817803:0xab20a0e99daa17ea" target="_blank">
+      </a>
+      <div id="map-tile">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11191.56628459195!2d-122.7723893!3d45.4719881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xea9279c04be89216!2sMandarin+Palace+Restaurant!5e0!3m2!1sen!2sus!4v1510689928605" allowfullscreen></iframe>
+        <span>map</span>
+      </div>
+    </div><!-- End of #home-tiles-->
+  </div><!-- End of #main-content-->
+
+
+
+
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Sun-Thurs: 11:15am - 10:00pm<br>
+          Fri-Sat: 11:15am - 2:30pm
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          225 SW Allen Rd<br>
+          Portland, OR 97223
+          <hr class="visible-xs">
+        </section>
+        <section id="phone" class ="col-sm-4">
+          <span>Phone:</span><br>
+          503-555-5555
+        </section>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
